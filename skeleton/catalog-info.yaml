@@ -20,8 +20,11 @@ spec:
   brand: Vauto
   carts: ${{values.carts }}
   product_name: ${{values.product_name }}
-  is_docs: true
-  is_kpi: true
-  is_aws_instances: true
-  is_prs: false
+  is_docs: ${{values.is_docs }}
+  is_dashboard: ${{values.is_dashboard }}
+  is_aws_instances: ${{values.is_aws_instances }}
+  is_downstream: ${{values.is_downstream }}
+  is_prs: ${{values.is_prs }}
+  is_pull_requests: ${{values.is_pull_requests }}
+  is_rally: ${{values.is_rally }}
   
