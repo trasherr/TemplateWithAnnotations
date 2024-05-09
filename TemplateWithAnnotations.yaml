@@ -72,6 +72,29 @@ spec:
           type: string
           description: Product Name
           ui:placeholder: E.g. Provision
+          
+        is_docs:
+          title: Show Docs
+          type: boolean
+        is_dashboard:
+          title: Show Dashboard
+          type: boolean
+        is_aws_instances:
+          title: Show AWS Instances
+          type: boolean
+        is_downstream:
+          title: Show Downstreams
+          type: boolean
+        is_prs:
+          title: Show Open PRs
+          type: boolean
+        is_pull_requests:
+          title: Show Pull Requests
+          type: boolean
+        is_rally:
+          title: Add Rally
+          type: boolean
+          
     - title: Choose a location
       required:
         - repoUrl
@@ -98,7 +121,13 @@ spec:
           engineering_manager: ${{ parameters.engineering_manager }}
           carts: ${{ parameters.carts }}
           product_name: ${{ parameters.product_name }}
-          team_name: ${{ parameters.team_name }}
+          is_docs: ${{ parameters.is_docs }}
+          is_dashboard: ${{ parameters.is_dashboard }}
+          is_aws_instances: ${{ parameters.is_aws_instances }}
+          is_downstream: ${{ parameters.is_downstream }}
+          is_prs: ${{ parameters.is_prs }}
+          is_pull_requests: ${{ parameters.is_pull_requests }}
+          is_rally: ${{ parameters.is_rally }}
     - id: publish
       name: Publish
       action: publish:github
