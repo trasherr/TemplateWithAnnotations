@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: custom-template-github
-  title: Custom Template Github
+  name: template-with-annotations
+  title: TemplateWithAnnotations
   description: Template for custom input on github for backstage
   tags:
     - test
