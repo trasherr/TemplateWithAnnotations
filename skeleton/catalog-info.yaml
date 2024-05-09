@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.component_id }}
+  description: This is test component
+  tags:
+    - test
+  annotations:
+    github.com/project-slug: '${{values.destination.owner + "/" + values.destination.repo}}'
+    backstage.io/techdocs-ref: dir:.
+spec:
+  slack_url: ${{values.slack_url }}
+  language: ${{values.language | dump}}
+  manager: ${{values.engineering_manager | dump}}
+  team: ${{values.team_name }}
+  type: website
+  lifecycle: experimental
+  owner: ${{values.owner | dump}}
+  portfolio: I5
+  brand: Vauto
+  carts: ${{values.carts }}
+  product_name: ${{values.product_name }}
+  is_docs: true
+  is_kpi: true
+  is_aws_instances: true
+  is_prs: false
+  
