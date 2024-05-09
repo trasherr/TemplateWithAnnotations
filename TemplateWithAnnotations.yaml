@@ -76,24 +76,31 @@ spec:
         is_docs:
           title: Show Docs
           type: boolean
+          default: false
         is_dashboard:
           title: Show Dashboard
           type: boolean
+          default: false
         is_aws_instances:
           title: Show AWS Instances
           type: boolean
+          default: false
         is_downstream:
           title: Show Downstreams
           type: boolean
+          default: false
         is_prs:
           title: Show Open PRs
           type: boolean
+          default: false
         is_pull_requests:
           title: Show Pull Requests
           type: boolean
+          default: false
         is_rally:
           title: Add Rally
           type: boolean
+          default: false
           
     - title: Choose a location
       required:
